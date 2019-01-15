@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card,Modal,Button } from 'antd'
 
+import '../index.less'
+
 class ModalPage extends React.Component {
   state = {
     visible:false,
@@ -54,7 +56,7 @@ class ModalPage extends React.Component {
   render() {
     return (
       <div>
-        <Card title='对话框'>
+        <Card title='对话框' className='card-wrap'>
           <Button type='primary' onClick={this.showModal}>open Modal!</Button>
           <Modal
             title='title'
@@ -67,7 +69,7 @@ class ModalPage extends React.Component {
             <p>some content....</p>
           </Modal>
         </Card>
-        <Card title='自定义页脚按钮属性'>
+        <Card title='自定义页脚按钮属性' className='card-wrap'>
           <Button type='primary' onClick={this.showModal1}>Footer</Button>
           <Modal
             title='title'
@@ -82,7 +84,7 @@ class ModalPage extends React.Component {
             <p>some content....</p>
           </Modal>
         </Card>
-        <Card title='自定义位置'>
+        <Card title='自定义位置' className='card-wrap'>
           <Button type='primary' onClick={this.showModal2}>Center</Button>
           <Button type='primary' onClick={this.showModal3}>Top</Button>
           <Modal
