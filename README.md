@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+第二天
+1 基础插件的开发
+  .暴露webpack的配置
+  .安装React-Router-Dom
+    , Axios 
+  .安装AntD
+  .安装less-loader
+  .修改less-loader 让它支持less 
+  .安装babel-plugin-loader 实现按需加载
+  修改主题
 
-## Available Scripts
+第三天
+1 页面结构的定义
+2 目录结构的定义
+3 grid系统的使用
+4 calc计算方法的使用
 
-In the project directory, you can run:
+项目架构  1 页面结构的定义 
+  - 拿到一个主页 
+  主页架构 -
+  左边是一个菜单,右边的是 header content footer
 
-### `npm start`
+  {
+    loader:require.resolve('less-loader) 
+  }
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+第四天 
+ 完成第4章的内容 
+ Router 把 所有的 Link Route 都包裹在里面 
+ react-router-dom 进行配置化 为什么进行配置化 是为什么让代码结构不那么难看
+ 通过看视频 搞清楚了   switch extra 这些的区别 
+ 混合路由
+ 路由分离
+ 嵌套路由
+ 混合路由组件化 Link 和 route 放一起了
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+ 分离route Link 嵌套路由 。
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ 第五天
+  基础按钮 5个
+  图形按钮 6个
