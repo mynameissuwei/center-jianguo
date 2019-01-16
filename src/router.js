@@ -8,6 +8,7 @@ import ModalPage from './pages/ui/modal'
 import Rotate from './pages/ui/spin'
 import Notificate from './pages/ui/notification'
 import Message from './pages/ui/messages'
+import Tab from './pages/ui/Tab'
 import NoMatch from './pages/noMatch'
 
 class IRouter extends React.Component {
@@ -24,6 +25,7 @@ class IRouter extends React.Component {
                 <Route path="/admin/ui/loadings" component={Rotate}></Route>
                 <Route path="/admin/ui/notification" component={Notificate}></Route>
                 <Route path="/admin/ui/messages" component={Message}></Route>
+                <Route path="/admin/ui/tabs" component={Tab}></Route>
                 <Route component={NoMatch} />
               </Switch>
             </Admin>
