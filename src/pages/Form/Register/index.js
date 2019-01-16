@@ -147,7 +147,7 @@ class FormRegister extends React.Component {
           <FormItem label='birthday' {...formItemLayout}>
             {
               getFieldDecorator('birthday',{
-                initialValue:moment('2018-01-01')
+                initialValue:''
               })(
                 <DatePicker />
               )
@@ -168,18 +168,6 @@ class FormRegister extends React.Component {
                 initialValue:''
               })(
                 <TimePicker />
-              )
-            }
-          </FormItem>
-          <FormItem  {...formItemLayout}>
-            {
-              getFieldDecorator('WakeUpTime',{
-                initialValue:''
-              })(
-                <div style={{marginLeft:170}}>
-                  <Checkbox />
-                  <span>我已经阅读过<a href='/'>慕课协议</a></span>
-                </div>
               )
             }
           </FormItem>
