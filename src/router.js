@@ -1,7 +1,8 @@
 import React from 'react'
 import { HashRouter as Router,Route,Switch } from 'react-router-dom'
 import App from './App'
-import Login from './pages/Login'
+import WrappedFormLogin from './pages/Form/Login'
+import WrappedFormRegister from './pages/Form/Register'
 import Admin from './admin'
 import Buttons from './pages/ui/buttons'
 import ModalPage from './pages/ui/modal'
@@ -16,7 +17,7 @@ class IRouter extends React.Component {
     return (
       <Router>
         <App>
-          <Route path='/login' component={Login}/>
+          <Route path='/login' component={Message}/>
           <Route path='/admin' render={()=> 
             <Admin>
               <Switch>
@@ -26,11 +27,13 @@ class IRouter extends React.Component {
                 <Route path="/admin/ui/notification" component={Notificate}></Route>
                 <Route path="/admin/ui/messages" component={Message}></Route>
                 <Route path="/admin/ui/tabs" component={Tab}></Route>
+                <Route path="/admin/form/login" component={WrappedFormLogin}></Route>
+                <Route path="/admin/form/reg" component={WrappedFormRegister}></Route>
                 <Route component={NoMatch} />
               </Switch>
             </Admin>
           }/>
-          <Route path='/order/detail' component={Login}/>
+          <Route path='/order/detail' component={Message}/>
         </App>
       </Router>
     ) 
