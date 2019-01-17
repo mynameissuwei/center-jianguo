@@ -10,6 +10,7 @@ import Rotate from './pages/ui/spin'
 import Notificate from './pages/ui/notification'
 import Message from './pages/ui/messages'
 import Tab from './pages/ui/Tab'
+import BaseTable from './pages/Table/base'
 import NoMatch from './pages/noMatch'
 
 class IRouter extends React.Component {
@@ -29,6 +30,7 @@ class IRouter extends React.Component {
                 <Route path="/admin/ui/tabs" component={Tab}></Route>
                 <Route path="/admin/form/login" component={WrappedFormLogin}></Route>
                 <Route path="/admin/form/reg" component={WrappedFormRegister}></Route>
+                <Route path="/admin/table/basic" component={BaseTable}></Route>
                 <Route component={NoMatch} />
               </Switch>
             </Admin>
