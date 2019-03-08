@@ -1,40 +1,22 @@
 import React from 'react'
-import { Row,Col } from 'antd'
+import { Row,Col,Divider,Icon } from 'antd'
 import Utlis from '../../utlis/utlis'
 
 import './index.less'
 
 class Header extends React.Component {
-  constructor() {
-    super()
-    this.state ={
-      time:'1'
-    }
-  }
-
-  componentDidMount() {
-    setInterval(() => {
-      this.updateTime()
-    },1000)
-  }
-
-  updateTime = () =>  {
-    this.setState({
-      time:Utlis.formateDate()
-    })
-  }
-
   render() {
     return(
       <div className='containerHeader'>
-        <Row className='top'>
-          <Col span={24} className='topRight'>欢迎河畔一角   退出</Col>
-        </Row>
-        <Row className='bottom'>
-          <div className='triangle'></div>
-          <Col span={4}>首页</Col>
-          <Col span={20} className='bottomRight'>
-            <div>{this.state.time}</div>
+        <Row style={{height:'60px',lineHeight:'60px'}}>
+          <Col span={4} style={{paddingLeft:'20px'}}>一级菜单/二级菜单/三级菜单</Col>
+          <Col span={20} style={{textAlign:'right',paddingRight:'25px'}}>
+            <Icon type="bell" />
+            <Divider type="vertical" style={{margin:'0px 15px'}} />
+            <span>
+              <Icon type="setting" />
+              用户名
+            </span>
           </Col>
         </Row>
       </div>

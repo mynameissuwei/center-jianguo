@@ -12,6 +12,7 @@ import Message from './pages/ui/messages'
 import Tab from './pages/ui/Tab'
 import BaseTable from './pages/Table/base'
 import NoMatch from './pages/noMatch'
+import Category from './pages/Category'
 
 class IRouter extends React.Component {
   render() {
@@ -31,6 +32,7 @@ class IRouter extends React.Component {
                 <Route path="/admin/form/login" component={WrappedFormLogin}></Route>
                 <Route path="/admin/form/reg" component={WrappedFormRegister}></Route>
                 <Route path="/admin/table/basic" component={BaseTable}></Route>
+                <Route path="/admin/category" component={Category}></Route>
                 <Route component={NoMatch} />
               </Switch>
             </Admin>
